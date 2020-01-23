@@ -10,6 +10,14 @@
     }
 </ul>
 
+<input class="form-control" type="text" required placeholder="Something todo..." />
+<button type="button" class="btn btn-outline-primary" @onclick="AddTodo">Add Todo</button>
+
 @code {
     private IList<TodoItem> todos = new List<TodoItem>();
+
+    private void AddTodo()
+    {
+        //Add todo item
+    }
 }
