@@ -2,7 +2,13 @@
 {
     public class TodoItem
     {
-        public string Titme { get; set; }
-        public bool IsDone { get; set; }
+        public TodoItem(string title, bool isDone = false)
+        {
+            Title = title;
+            IsDone = isDone;
+        }                  
+
+        public string Title { get; }
+        public bool IsDone { get; }
     }
 }
